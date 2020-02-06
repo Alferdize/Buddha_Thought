@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/daat"/>
+
+<!--    <TextView-->
+<!--            android:id="@+id/textdata"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginStart="1dp"-->
+<!--            android:layout_marginLeft="1dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginEnd="1dp"-->
+<!--            android:layout_marginRight="1dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="You can set your application to download fonts by using Android Studio"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="italic"-->
+<!--            app:fontFamily="casual" />-->
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/download"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:alpha="0.4"
+                    android:paddingBottom="5dp"
+                    android:background="#80000000"
+                    android:drawableBottom="@drawable/download"
+                    android:gravity="center" />
+
+            <Button
+                    android:id="@+id/button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:alpha="0.4"
+                    android:paddingBottom="5dp"
+                    android:background="#80000000"
+                    android:drawableBottom="@drawable/copy_clip"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+
+            <Button
+                    android:id="@+id/share"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:alpha="0.4"
+                    android:paddingBottom="5dp"
+                    android:background="#80000000"
+                    android:drawableBottom="@drawable/share"
+                    android:gravity="center" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
